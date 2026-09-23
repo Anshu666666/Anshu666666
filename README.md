@@ -28,6 +28,72 @@
 
 ---
 
+## 🚀 Featured Projects
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/Anshu666666/TransactFlow">TransactFlow</a>
+      </h3>
+      <p align="center">
+        <b>Enterprise CDC Streaming Pipeline</b>
+      </p>
+      <p align="center">
+        <code>C++17</code> <code>Kafka</code> <code>Debezium</code> <code>PostgreSQL</code> <code>Redis</code> <code>Elasticsearch</code> <code>Docker</code>
+      </p>
+      <ul>
+        <li>Real-time WAL change data capture ingesting <b>1,000+ req/s</b> with <b>zero data loss</b> across 216k+ soak events.</li>
+        <li>High-throughput <b>C++ consumer workers</b> with manual offsets, exponential retries, and <b>DLQ</b> poison message isolation.</li>
+        <li>Atomic Lua-scripted <b>LSN monotonicity guards</b> in Redis ensuring sub-millisecond cache consistency.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/Anshu666666/TransactFlow"><b>View Repository →</b></a>
+      </p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/Anshu666666/FlashDB">FlashDB</a>
+      </h3>
+      <p align="center">
+        <b>Embedded LSM-Tree Storage Engine</b>
+      </p>
+      <p align="center">
+        <code>C++20</code> <code>CMake</code> <code>Google Benchmark</code> <code>Python</code>
+      </p>
+      <ul>
+        <li>Embedded Log-Structured Merge Key-Value engine built from scratch with zero database dependencies.</li>
+        <li>Decoupled <b>WAL</b>, in-memory <b>MemTable</b>, immutable <b>SSTables</b>, and <b>Size-Tiered Compaction</b>.</li>
+        <li>Probabilistic <b>Bloom Filters</b> delivering a <b>~68x–85x read speedup</b> on cache misses.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/Anshu666666/FlashDB"><b>View Repository →</b></a>
+      </p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/Anshu666666/deepTrade">DeepTrade</a>
+      </h3>
+      <p align="center">
+        <b>Agentic Market & Trading Assistant</b>
+      </p>
+      <p align="center">
+        <code>Python</code> <code>FastAPI</code> <code>LangGraph</code> <code>DeepAgents</code> <code>Upstox API</code> <code>Supabase</code>
+      </p>
+      <ul>
+        <li>Self-hosted autonomous assistant orchestrating specialized research and broker execution subagents.</li>
+        <li>Live/paper order execution on Upstox via Telegram with TOTP two-factor security.</li>
+        <li>Upstream contributor: reported 2 critical bugs in official <b>Upstox Python SDK</b> (<a href="https://github.com/upstox/upstox-python/issues/155">#155</a>, <a href="https://github.com/upstox/upstox-python/issues/156">#156</a>).</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/Anshu666666/deepTrade"><b>View Repository →</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## ⚙️ Core Engineering & System Design
 
 - **Concurrency & Thread Safety**: Mutexes, condition variables, lock contention analysis, atomic operations, race-condition mitigation, and memory lifecycle management.
