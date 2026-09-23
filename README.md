@@ -185,4 +185,7 @@
   <a href="https://www.linkedin.com/in/anshuman-biswas-iiitk/">
     <img src="https://img.shields.io/badge/LinkedIn-%23333?style=for-the-badge&logo=linkedin&logoColor=blue">
   </a>
+  <a href="https://github.com/Anshu666666/Anshu666666/blob/main/resume.tex" target="_blank">
+    <img src="https://img.shields.io/badge/Resume-LaTeX-%23333?style=for-the-badge&logo=latex&logoColor=white">
+  </a>
 </p>
