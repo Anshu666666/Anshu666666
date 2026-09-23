@@ -1,4 +1,4 @@
-%-------------------------
+﻿%-------------------------
 % Resume in LaTeX
 % Author : Anshuman Biswas
 % Based off of: https://github.com/sb2nov/resume (Jake Gutierrez)
@@ -26,12 +26,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins for a strictly calibrated, elegant 1-page layout
+% Calibrated margins to guarantee a tight, single-page fit
 \addtolength{\oddsidemargin}{-0.65in}
 \addtolength{\evensidemargin}{-0.65in}
 \addtolength{\textwidth}{1.3in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.52in}
 
 \urlstyle{same}
 
@@ -41,8 +41,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-9pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -51,12 +51,12 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1.5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -64,7 +64,7 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-6pt}
@@ -72,7 +72,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=1.2pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=0.5pt, parsep=0pt, topsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
@@ -88,6 +88,7 @@
     \href{https://www.linkedin.com/in/anshuman-biswas-iiitk/}{\underline{linkedin.com/in/anshuman-biswas-iiitk}} $|$
     \href{https://github.com/Anshu666666}{\underline{github.com/Anshu666666}}
 \end{center}
+\vspace{-14pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -102,17 +103,17 @@
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.15in, itemsep=0.5pt, parsep=0pt, label={}]
     \small{\item{
      \textbf{Languages}{: C++, Python, TypeScript, JavaScript, SQL (PostgreSQL, MySQL), C, HTML/CSS} \\
-     \textbf{AI \& Agent Architecture}{: LangGraph, LangChain, DeepAgents, Multi-Agent Systems, LLM Evaluation, RAG, Prompt Engineering} \\
-     \textbf{Distributed Systems \& Storage}{: LSM Trees, Write-Ahead Logs (WAL), Bloom Filters, Apache Kafka, Debezium (CDC), Redis, Elasticsearch} \\
-     \textbf{Backend \& Cloud}{: FastAPI, Node.js, Express, REST APIs, WebSockets, Server-Sent Events (SSE), Supabase, Cloudflare (R2/D1), GCP, Render} \\
-     \textbf{Developer Tools \& Collaboration}{: Docker, Kubernetes, Linux (POSIX, Bash), Git, GitHub Actions, CMake, Google Benchmark, ngrok, Jira, Slack, Postman, VS Code} \\
+     \textbf{AI \& Agent Architecture}{: LangGraph, LangChain, DeepAgents, Multi-Agent Systems, LLM Evaluation, RAG} \\
+     \textbf{Distributed Systems \& Storage}{: LSM Trees, Write-Ahead Logs (WAL), Bloom Filters, Apache Kafka, Debezium, Redis, Elasticsearch} \\
+     \textbf{Backend \& Cloud}{: FastAPI, Node.js, Express, REST APIs, WebSockets, SSE, Supabase, Cloudflare (R2/D1), GCP, Render} \\
+     \textbf{Developer Tools \& Collaboration}{: Docker, Kubernetes, Linux, Git, GitHub Actions, CMake, Google Benchmark, ngrok, Jira, Slack} \\
      \textbf{Spoken Languages}{: English (Fluent), Hindi (Fluent), Bengali (Native), French (Elementary)}
     }}
  \end{itemize}
- \vspace{-4pt}
+ \vspace{-6pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -143,7 +144,7 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Anshu666666/TransactFlow}{\underline{TransactFlow}}} $|$ \emph{C++17, PostgreSQL, Apache Kafka, Debezium, Redis, Elasticsearch, Docker}}{Sept. 2025}
+          {\textbf{\href{https://github.com/Anshu666666/TransactFlow}{TransactFlow}} $|$ \emph{C++17, PostgreSQL, Apache Kafka, Debezium, Redis, Elasticsearch, Docker}}{Sept. 2025}
           \resumeItemListStart
             \resumeItem{Engineered an enterprise Change Data Capture (\textbf{CDC}) streaming pipeline ingesting \textbf{1,000+ req/s} into PostgreSQL, decoding WAL with Debezium and replicating to dual sinks with \textbf{zero data loss} over 216k+ soak events.}
             \resumeItem{Developed high-throughput \textbf{C++} consumer workers featuring manual Kafka offset commits, exponential backoff retries, and Dead-Letter Queue (\textbf{DLQ}) isolation for poisonous payloads.}
@@ -151,27 +152,27 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Anshu666666/FlashDB}{\underline{FlashDB}}} $|$ \emph{C++20, CMake, Google Benchmark, Python}}{Aug. 2025}
+          {\textbf{\href{https://github.com/Anshu666666/FlashDB}{FlashDB}} $|$ \emph{C++20, CMake, Google Benchmark, Python}}{Aug. 2025}
           \resumeItemListStart
             \resumeItem{Designed and implemented an embedded Log-Structured Merge (\textbf{LSM}) tree key-value storage engine in \textbf{C++20} with decoupled Write-Ahead Log (\textbf{WAL}), MemTable, SSTables, and Size-Tiered Compaction.}
             \resumeItem{Integrated probabilistic \textbf{Bloom Filters} to eliminate redundant disk probes, achieving an \textbf{$\sim$85$\times$ read speedup} for non-existent key lookups under Google Benchmark stress testing.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Anshu666666/deepTrade}{\underline{DeepTrade}}} $|$ \emph{Python, FastAPI, LangGraph, DeepAgents, Upstox API, Supabase, Telegram API}}{July 2025}
+          {\textbf{\href{https://github.com/Anshu666666/deepTrade}{DeepTrade}} $|$ \emph{Python, FastAPI, LangGraph, DeepAgents, Upstox API, Supabase, Telegram API}}{July 2025}
           \resumeItemListStart
             \resumeItem{Architected a self-hosted agentic trading assistant coordinating specialized research and broker-execution subagents for real-time market queries and live/paper order execution on Upstox via Telegram with TOTP two-factor security.}
-            \resumeItem{Investigated and upstream-reported two critical bugs in the official \textbf{Upstox Python SDK} (\href{https://github.com/upstox/upstox-python/issues/155}{\underline{\#155}}, \href{https://github.com/upstox/upstox-python/issues/156}{\underline{\#156}}) regarding singleton configuration state leakage and urllib3 $\ge$ 2.0.0 deprecations.}
+            \resumeItem{Investigated and upstream-reported two critical bugs in the official \textbf{Upstox Python SDK} (\href{https://github.com/upstox/upstox-python/issues/155}{\#155}, \href{https://github.com/upstox/upstox-python/issues/156}{\#156}) regarding singleton configuration state leakage and urllib3 $\ge$ 2.0.0 deprecations.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.15in, itemsep=0.5pt, parsep=0pt, label={}]
     \small{\item{
-     \textbf{Anthropic}{: \href{https://verify.skilljar.com/c/s2xodzvren54}{\underline{Claude with the Anthropic API}} --- Hands-on LLM integration, context-aware architectures, and agentic workflows (Cert: \texttt{s2xodzvren54})} \\ \vspace{1pt}
-     \textbf{LangChain Academy}{: Project: Deep Agents --- Building autonomous, long-running AI agents on LangGraph and LangChain (Cert ID: \texttt{wtfjoejcfo})} \\ \vspace{1pt}
+     \textbf{Anthropic}{: \href{https://verify.skilljar.com/c/s2xodzvren54}{Claude with the Anthropic API} --- Hands-on LLM integration, context-aware architectures, and agentic workflows (Cert: \texttt{s2xodzvren54})} \\
+     \textbf{LangChain Academy}{: Project: Deep Agents --- Building autonomous, long-running AI agents on LangGraph and LangChain (Cert ID: \texttt{wtfjoejcfo})} \\
      \textbf{Oracle University}{: Oracle Cloud Infrastructure (OCI) 2025 Certified AI Foundations Associate (Cert: \texttt{323142480OCI25AICFA})}
     }}
  \end{itemize}
