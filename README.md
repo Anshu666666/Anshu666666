@@ -16,6 +16,12 @@
   I enjoy building <b>agentic AI infrastructure, distributed systems, and storage engines</b> — exploring how systems work under the hood, from low-level LSM tree internals to real-time event streaming pipelines.
 </p>
 
+<p align="left">
+  <a href="https://github.com/Anshu666666/Anshu666666/blob/main/Anshuman_Resume.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/Resume-PDF-%23333?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Resume PDF">
+  </a>
+</p>
+
 ---
 
 ## ⚡ What I Work On
@@ -185,7 +191,7 @@
   <a href="https://www.linkedin.com/in/anshuman-biswas-iiitk/">
     <img src="https://img.shields.io/badge/LinkedIn-%23333?style=for-the-badge&logo=linkedin&logoColor=blue">
   </a>
-  <a href="https://github.com/Anshu666666/Anshu666666/blob/main/resume.tex" target="_blank">
-    <img src="https://img.shields.io/badge/Resume-LaTeX-%23333?style=for-the-badge&logo=latex&logoColor=white">
+  <a href="https://github.com/Anshu666666/Anshu666666/blob/main/Anshuman_Resume.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/Resume-PDF-%23333?style=for-the-badge&logo=adobeacrobatreader&logoColor=red">
   </a>
 </p>
