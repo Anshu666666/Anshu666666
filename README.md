@@ -116,7 +116,7 @@
   <a href="mailto:anshuproductions@gmail.com">
     <img src="https://img.shields.io/badge/Email-%23333?style=for-the-badge&logo=gmail&logoColor=red">
   </a>
-  <a href="https://www.linkedin.com/in/anshuman-biswas-2a69a12a4">
+  <a href="https://www.linkedin.com/in/anshuman-biswas-iiitk/">
     <img src="https://img.shields.io/badge/LinkedIn-%23333?style=for-the-badge&logo=linkedin&logoColor=blue">
   </a>
 </p>
