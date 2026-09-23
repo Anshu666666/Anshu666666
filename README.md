@@ -20,11 +20,20 @@
 
 ## ⚡ What I Work On
 
-- **AI & Agent Infrastructure**: LangGraph, LangChain, DeepAgents, multi-agent supervisor systems, LLM evaluation & observability
-- **Distributed Systems & Storage Engines**: C++20, LSM Trees (WAL, MemTable, SSTables, Bloom Filters), concurrency, caching, data replication
-- **Data Engineering & CDC**: Apache Kafka, Debezium, WAL streaming, Redis, Elasticsearch, PostgreSQL
-- **Backend & APIs**: Python, FastAPI, REST APIs, WebSockets, Supabase, Docker
-- **Product Engineering**: TypeScript, React, Next.js, Vite, Telegram Bot API
+- **AI & Agent Infrastructure**: LangGraph, LangChain, DeepAgents, supervisor agent orchestration, evaluation harnesses, deterministic tool execution
+- **Distributed Systems & Concurrency**: Multithreading, atomic primitives, race condition diagnosis, distributed locking, idempotency guarantees
+- **Storage Engine Internals & Data Engineering**: LSM Trees (WAL, MemTable, SSTables, Bloom Filters), write amplification trade-offs, Change Data Capture (CDC), zero-loss replication
+- **High-Performance Backend & Networking**: FastAPI, REST APIs, WebSockets, connection pooling, backpressure handling, rate limiting
+- **Reliability & System Design**: Circuit breakers, exponential backoff with jitter, dead-letter queues (DLQ), telemetry, p95/p99 latency profiling
+
+---
+
+## ⚙️ Core Engineering & System Design
+
+- **Concurrency & Thread Safety**: Mutexes, condition variables, lock contention analysis, atomic operations, race-condition mitigation, and memory lifecycle management.
+- **Distributed Reliability & Fault Tolerance**: Idempotent message consumers, distributed rate-limiting (Token Bucket / Leaky Bucket), retry storm protection with exponential backoff & jitter, and Dead-Letter Queue (DLQ) patterns.
+- **Storage Mechanics & Access Patterns**: LSM-tree design (sequential append-only logging vs random read penalties), in-memory MemTables, immutable SSTables, probabilistic membership testing with Bloom Filters, and atomic Lua-scripted cache transactions.
+- **Network Transport & API Design**: Connection pooling, HTTP/REST state contracts, persistent WebSocket streaming, backpressure control, and payload serialization optimization.
 
 ---
 
@@ -75,11 +84,11 @@
 ## 🧠 Skills
 
 - **AI & Agent Architecture:** LangGraph, LangChain, DeepAgents, Multi-Agent Systems, LLM Evaluation, Observability, RAG
-- **Languages:** C++, Python, TypeScript, JavaScript, C, SQL
-- **Distributed & Storage Systems:** LSM Trees, Write-Ahead Logs (WAL), SSTables, Bloom Filters, Compaction, Concurrency
-- **Streaming & Data Infrastructure:** Apache Kafka, Debezium (CDC), Redis, Elasticsearch, PostgreSQL
-- **Backend & APIs:** FastAPI, Node.js, Express, REST APIs, WebSockets, Supabase Edge Functions
-- **Infrastructure & Tools:** Docker, Kubernetes, Linux, GitHub, CMake, Google Benchmark, VS Code
+- **Core Systems & Concurrency:** Multithreading, Thread Pools, Mutexes & Locks, Race Condition Triage, Memory Management (RAII, Pointers)
+- **Distributed Systems & Streaming:** Apache Kafka, Debezium (CDC), Redis, Elasticsearch, Idempotency, Circuit Breakers, Dead-Letter Queues (DLQ)
+- **Storage Engines & Databases:** LSM Trees, Write-Ahead Logs (WAL), SSTables, Bloom Filters, PostgreSQL, MySQL, Redis (Lua Scripting)
+- **Backend & Networking:** FastAPI, Node.js, Express, REST APIs, WebSockets, Rate Limiting, Connection Pooling, Supabase
+- **Infrastructure & Tools:** Docker, Kubernetes, Linux (POSIX, Bash), GitHub, CMake, Google Benchmark, VS Code
 
 ---
 
