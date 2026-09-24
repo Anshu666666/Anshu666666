@@ -18,7 +18,10 @@
 
 <p align="left">
   <a href="https://github.com/Anshu666666/Anshu666666/blob/main/Anshuman_Resume.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/Resume-PDF-%23333?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Resume PDF">
+    <img src="https://img.shields.io/badge/Resume_(PDF)-ED2224?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume PDF">
+  </a>
+  <a href="https://www.linkedin.com/in/anshuman-biswas-iiitk/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
 </p>
 
@@ -186,12 +189,12 @@
 
 <p align="left">
   <a href="mailto:anshuproductions@gmail.com">
-    <img src="https://img.shields.io/badge/Email-%23333?style=for-the-badge&logo=gmail&logoColor=red">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
-  <a href="https://www.linkedin.com/in/anshuman-biswas-iiitk/">
-    <img src="https://img.shields.io/badge/LinkedIn-%23333?style=for-the-badge&logo=linkedin&logoColor=blue">
+  <a href="https://www.linkedin.com/in/anshuman-biswas-iiitk/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="https://github.com/Anshu666666/Anshu666666/blob/main/Anshuman_Resume.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/Resume-PDF-%23333?style=for-the-badge&logo=adobeacrobatreader&logoColor=red">
+    <img src="https://img.shields.io/badge/Resume_(PDF)-ED2224?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume PDF">
   </a>
 </p>
