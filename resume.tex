@@ -1,4 +1,4 @@
-﻿%-------------------------
+%-------------------------
 % Resume in LaTeX
 % Author : Anshuman Biswas
 % Based off of: https://github.com/sb2nov/resume (Jake Gutierrez)
@@ -26,7 +26,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Calibrated margins to guarantee a tight, single-page fit
+% Calibrated margins for clean 2-page layout
+% Optional: to show page numbers, uncomment: \rfoot{\small\textit{Page \thepage}}
 \addtolength{\oddsidemargin}{-0.65in}
 \addtolength{\evensidemargin}{-0.65in}
 \addtolength{\textwidth}{1.3in}
@@ -85,6 +86,7 @@
     \textbf{\Huge \scshape Anshuman Biswas} \\ \vspace{2pt}
     \small +91 7855043301 $|$ 
     \href{mailto:anshuproductions@gmail.com}{\underline{anshuproductions@gmail.com}} $|$ 
+    Gurgaon, Haryana $|$ 
     \href{https://www.linkedin.com/in/anshuman-biswas-iiitk/}{\underline{linkedin.com/in/anshuman-biswas-iiitk}} $|$
     \href{https://github.com/Anshu666666}{\underline{github.com/Anshu666666}}
 \end{center}
@@ -139,12 +141,58 @@
 
   \resumeSubHeadingListEnd
 
+%-----------OPEN SOURCE CONTRIBUTIONS-----------
+\section{Open Source Contributions}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google Quantum AI (Cirq)}{Sep. 2026}
+      {Core Developer Infrastructure \& Release Pipeline Tooling}{\href{https://github.com/quantumlib/Cirq/pull/8379}{\underline{PR \#8379 (Merged)}}}
+      \resumeItemListStart
+        \resumeItem{Refactored developer release pipeline architecture and relative path hierarchies to standardize dev onboarding across the core repository.}
+        \resumeItem{Completed Google Contributor License Agreement (CLA) verification and collaborated directly with Google Quantum AI software engineers (\textbf{Michael Hucka} and \textbf{Pavol Juhas}) through code review to immediate merge with 44/44 green CI test checks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Munich Quantum Toolkit (TUM)}{Sep. 2026}
+      {Quantum Algorithms \& Compiler Benchmarking (MQT Bench)}{\href{https://github.com/munich-quantum-toolkit/bench/pull/1037}{\underline{PR \#1037 (Merged)}}}
+      \resumeItemListStart
+        \resumeItem{Engineered the scalable \textbf{Multipartite Superdense Coding} benchmark using $n$-qubit GHZ states (Bose et al., 1998; Hillebrand, 2012) to evaluate multi-qubit routing, compilation passes, and global entanglement distribution.}
+        \resumeItem{Implemented local Pauli ($X, Z$) encoding logic with bit-flip propagation compensation ($c_i \oplus c_{n-1} = 1$) through the inverse-GHZ CNOT decoding cascade; isolated protocol stages with barriers to guarantee benchmark workload retention.}
+        \resumeItem{Constructed exhaustive \texttt{StatevectorSampler} simulation test suites across all message permutations for $n \in \{2, 3, 4\}$ qubits with 100\% test coverage; reviewed and merged by TUM researchers \textbf{Simon Hofmann} and \textbf{Daniel Haag}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tenuo AI}{Sep. 2026}
+      {Agent Capability Authorization \& Offline Test Suite (CrewAI)}{\href{https://github.com/tenuo-ai/tenuo/pull/716}{\underline{PR \#716 (Merged)}}}
+      \resumeItemListStart
+        \resumeItem{Architected the official \texttt{GuardedCrew} quickstart and offline test suite with a deterministic LLM double; validated role-based policies, argument regex constraints, and CrewAI 1.5--1.15 compatibility across 70 CI checks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HOL-Guard (Hashgraph Online)}{Sep. 2026}
+      {Static Analysis \& Secret Scanner False-Positive Hardening}{\href{https://github.com/hashgraph-online/hol-guard/pull/3109}{\underline{PR \#3109 (Merged)}}}
+      \resumeItemListStart
+        \resumeItem{Remediated false-positive credential alerts by engineering bracketed delimiter heuristics and regex boundary guards for template parameters (\href{https://github.com/hashgraph-online/hol-guard/issues/3091}{\underline{\#3091}}); enforced fail-closed multiline tests.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MCP Memory Service}{Sep. 2026}
+      {Security Hardening \& Log Injection Mitigation}{\href{https://github.com/doobidoo/mcp-memory-service/pull/1308}{\underline{PR \#1308 (Merged)}}}
+      \resumeItemListStart
+        \resumeItem{Eliminated log injection vulnerabilities across configuration modules by converting eager f-strings to lazy parameterized logging and expanding \texttt{GUARDED\_MODULES} regression coverage (14/14 CI checks passed).}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\newpage
+
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Anshu666666/TransactFlow}{TransactFlow}} $|$ \emph{C++17, PostgreSQL, Apache Kafka, Debezium, Redis, Elasticsearch, Docker}}{Sept. 2025}
+          {\textbf{\href{https://github.com/Anshu666666/TransactFlow}{\underline{TransactFlow}}} $|$ \emph{C++17, PostgreSQL, Apache Kafka, Debezium, Redis, Elasticsearch, Docker}}{Sept. 2025}
           \resumeItemListStart
             \resumeItem{Engineered an enterprise Change Data Capture (\textbf{CDC}) streaming pipeline ingesting \textbf{1,000+ req/s} into PostgreSQL, decoding WAL with Debezium and replicating to dual sinks with \textbf{zero data loss} over 216k+ soak events.}
             \resumeItem{Developed high-throughput \textbf{C++} consumer workers featuring manual Kafka offset commits, exponential backoff retries, and Dead-Letter Queue (\textbf{DLQ}) isolation for poisonous payloads.}
@@ -152,17 +200,17 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Anshu666666/FlashDB}{FlashDB}} $|$ \emph{C++20, CMake, Google Benchmark, Python}}{Aug. 2025}
+          {\textbf{\href{https://github.com/Anshu666666/FlashDB}{\underline{FlashDB}}} $|$ \emph{C++20, CMake, Google Benchmark, Python}}{Aug. 2025}
           \resumeItemListStart
             \resumeItem{Designed and implemented an embedded Log-Structured Merge (\textbf{LSM}) tree key-value storage engine in \textbf{C++20} with decoupled Write-Ahead Log (\textbf{WAL}), MemTable, SSTables, and Size-Tiered Compaction.}
             \resumeItem{Integrated probabilistic \textbf{Bloom Filters} to eliminate redundant disk probes, achieving an \textbf{$\sim$85$\times$ read speedup} for non-existent key lookups under Google Benchmark stress testing.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Anshu666666/deepTrade}{DeepTrade}} $|$ \emph{Python, FastAPI, LangGraph, DeepAgents, Upstox API, Supabase, Telegram API}}{July 2025}
+          {\textbf{\href{https://github.com/Anshu666666/deepTrade}{\underline{DeepTrade}}} $|$ \emph{Python, FastAPI, LangGraph, DeepAgents, Upstox API, Supabase, Telegram API}}{July 2025}
           \resumeItemListStart
             \resumeItem{Architected a self-hosted agentic trading assistant coordinating specialized research and broker-execution subagents for real-time market queries and live/paper order execution on Upstox via Telegram with TOTP two-factor security.}
-            \resumeItem{Investigated and upstream-reported two critical bugs in the official \textbf{Upstox Python SDK} (\href{https://github.com/upstox/upstox-python/issues/155}{\#155}, \href{https://github.com/upstox/upstox-python/issues/156}{\#156}) regarding singleton configuration state leakage and urllib3 $\ge$ 2.0.0 deprecations.}
+            \resumeItem{Investigated and upstream-reported two critical bugs in the official \textbf{Upstox Python SDK} (\href{https://github.com/upstox/upstox-python/issues/155}{\underline{\#155}}, \href{https://github.com/upstox/upstox-python/issues/156}{\underline{\#156}}) regarding singleton configuration state leakage and urllib3 $\ge$ 2.0.0 deprecations.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -171,7 +219,7 @@
 \section{Certifications}
  \begin{itemize}[leftmargin=0.15in, itemsep=0.5pt, parsep=0pt, label={}]
     \small{\item{
-     \textbf{Anthropic}{: \href{https://verify.skilljar.com/c/s2xodzvren54}{Claude with the Anthropic API} --- Hands-on LLM integration, context-aware architectures, and agentic workflows (Cert: \texttt{s2xodzvren54})} \\
+     \textbf{Anthropic}{: \href{https://verify.skilljar.com/c/s2xodzvren54}{\underline{Claude with the Anthropic API}} --- Hands-on LLM integration, context-aware architectures, and agentic workflows (Cert: \texttt{s2xodzvren54})} \\
      \textbf{LangChain Academy}{: Project: Deep Agents --- Building autonomous, long-running AI agents on LangGraph and LangChain (Cert ID: \texttt{wtfjoejcfo})} \\
      \textbf{Oracle University}{: Oracle Cloud Infrastructure (OCI) 2025 Certified AI Foundations Associate (Cert: \texttt{323142480OCI25AICFA})}
     }}

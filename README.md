@@ -103,6 +103,106 @@
 
 ---
 
+## 🌐 Open Source Contributions
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/quantumlib/Cirq">Google Quantum AI (Cirq)</a>
+      </h3>
+      <p align="center">
+        <b>Core Developer Infrastructure &amp; Release Tooling</b>
+      </p>
+      <p align="center">
+        <a href="https://github.com/quantumlib/Cirq/pull/8379" target="_blank">
+          <img src="https://img.shields.io/badge/PR_%238379-Merged-8957e5?style=flat-square&logo=github&logoColor=white" alt="PR #8379">
+        </a>
+        <img src="https://img.shields.io/badge/CI-44%2F44_Passed-2ea44f?style=flat-square&logo=githubactions&logoColor=white" alt="CI Passed">
+        <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+      </p>
+      <ul>
+        <li>Refactored developer release pipeline architecture and relative path hierarchies to standardize dev onboarding across the core repository.</li>
+        <li>Completed Google CLA verification and collaborated directly with Google Quantum AI software engineers (<b>Michael Hucka</b>, <b>Pavol Juhas</b>) through code review to immediate merge.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/quantumlib/Cirq/pull/8379"><b>View Pull Request →</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/munich-quantum-toolkit/bench">Munich Quantum Toolkit (TUM)</a>
+      </h3>
+      <p align="center">
+        <b>Quantum Algorithms &amp; Compiler Benchmarking (MQT Bench)</b>
+      </p>
+      <p align="center">
+        <a href="https://github.com/munich-quantum-toolkit/bench/pull/1037" target="_blank">
+          <img src="https://img.shields.io/badge/PR_%231037-Merged-8957e5?style=flat-square&logo=github&logoColor=white" alt="PR #1037">
+        </a>
+        <img src="https://img.shields.io/badge/Qiskit-2.5+-613380?style=flat-square&logo=qiskit&logoColor=white" alt="Qiskit">
+        <img src="https://img.shields.io/badge/CI-Green-2ea44f?style=flat-square&logo=githubactions&logoColor=white" alt="CI">
+      </p>
+      <ul>
+        <li>Engineered scalable <b>Superdense Coding</b> communication benchmark (Bennett &amp; Wiesner, 1992) to evaluate circuit compilation and entanglement distribution across modular Bell pairs.</li>
+        <li>Diagnosed and resolved a Qiskit 2.5+ target-independent compiler optimization anomaly where commutation passes collapsed entangling <b>CX</b> gates; introduced pair-local barriers to guarantee protocol workload retention.</li>
+        <li>Constructed end-to-end regression suites with <code>StatevectorSampler</code> verifying full fidelity across all 2-bit permutations, actively triaged with TUM maintainers (<b>Dr. Lukas Burgholzer</b>, <b>Simon Hofmann</b>).</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/munich-quantum-toolkit/bench/pull/1037"><b>View Pull Request →</b></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/tenuo-ai/tenuo">Tenuo AI</a>
+      </h3>
+      <p align="center">
+        <b>Agent Capability Authorization &amp; Testing Infrastructure</b>
+      </p>
+      <p align="center">
+        <a href="https://github.com/tenuo-ai/tenuo/pull/716" target="_blank">
+          <img src="https://img.shields.io/badge/PR_%23716-Merged-8957e5?style=flat-square&logo=github&logoColor=white" alt="PR #716">
+        </a>
+        <img src="https://img.shields.io/badge/CI-70%2F70_Passed-2ea44f?style=flat-square&logo=githubactions&logoColor=white" alt="CI Passed">
+        <img src="https://img.shields.io/badge/CrewAI-1.5--1.15-FF6F61?style=flat-square" alt="CrewAI">
+      </p>
+      <ul>
+        <li>Engineered the official quickstart architecture and test suite for the CrewAI <code>GuardedCrew</code> builder, enforcing role-based tool policies, argument regex constraints, and strict post-kickoff audit detection.</li>
+        <li>Implemented an offline deterministic LLM double to run reproducible test runs without provider API keys; established cross-version compatibility across CrewAI 1.5–1.15 in the CI matrix.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/tenuo-ai/tenuo/pull/716"><b>View Pull Request →</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/doobidoo/mcp-memory-service">MCP Memory Service</a>
+      </h3>
+      <p align="center">
+        <b>Security Hardening &amp; Log Sanitization Infrastructure</b>
+      </p>
+      <p align="center">
+        <a href="https://github.com/doobidoo/mcp-memory-service/pull/1308" target="_blank">
+          <img src="https://img.shields.io/badge/PR_%231308-Merged-8957e5?style=flat-square&logo=github&logoColor=white" alt="PR #1308">
+        </a>
+        <img src="https://img.shields.io/badge/CI-14%2F14_Passed-2ea44f?style=flat-square&logo=githubactions&logoColor=white" alt="CI Passed">
+        <img src="https://img.shields.io/badge/MCP-Protocol-4A90E2?style=flat-square" alt="MCP">
+      </p>
+      <ul>
+        <li>Mitigated log injection vulnerabilities across configuration modules by migrating eager f-strings to lazy parameterized logging (<code>%</code>-formatting).</li>
+        <li>Enforced static security boundaries by integrating configuration layers into <code>GUARDED_MODULES</code> regression suites.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/doobidoo/mcp-memory-service/pull/1308"><b>View Pull Request →</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## ⚙️ Core Engineering & System Design
 
 - **Concurrency & Thread Safety**: Mutexes, condition variables, lock contention analysis, atomic operations, race-condition mitigation, and memory lifecycle management.
